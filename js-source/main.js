@@ -168,16 +168,16 @@ if (typeof(ymaps) !== "undefined") {
 
 $(document).ready(function () {
 //	console.log('sdf');
-	var homeSlider = $('.home-slider');
-	homeSlider.owlCarousel({
-		loop:true,
-		nav:true,
-		navText: [ '<img src="img/arrow-left.png" alt="Влево">', '<img src="img/arrow-right.png" alt="Вправо">' ],
-		items:1
-	//			autoplay:true,
-	//			autoplayTimeout:5000,
-	//			autoplayHoverPause:true
-	})
+//	var homeSlider = $('.home-slider');
+//	homeSlider.owlCarousel({
+//		loop:true,
+//		nav:true,
+//		navText: [ '<img src="img/arrow-left.png" alt="Влево">', '<img src="img/arrow-right.png" alt="Вправо">' ],
+//		items:1
+//	//			autoplay:true,
+//	//			autoplayTimeout:5000,
+//	//			autoplayHoverPause:true
+//	})
 
 	$('.slider-hero').owlCarousel({
 		loop:false,
@@ -194,69 +194,69 @@ $(document).ready(function () {
 
 	//		$('.product-info__item').hide();
 	//		$('.product-info__item').eq(0).show();
-	$('.home-slider-info__item').hide();
-	$('.home-slider-info__item').eq(0).show();
-	homeSlider.on('changed.owl.carousel initialized.owl.carousel', function(event) {
-		var owlItems  = event.item.count,
-			item      = event.item.index,
-			calcItem  = Math.floor(item - (event.item.count / 2) + 1);
-
-		if (calcItem === 0) {
-			calcItem = owlItems;
-		}
-		if (calcItem > owlItems) {
-			calcItem = 1;
-		}
-		$('.home-slider-info__item').hide();
-		$('.home-slider-info__item').eq(calcItem - 1).toggle();
-	});
-	$('.news-slider').owlCarousel({
-		loop: true,
-		nav: false,
-		navText: [ '', '' ],
-		items: 6,
-		slideBy: 6,
-		margin: 12,
+//	$('.home-slider-info__item').hide();
+//	$('.home-slider-info__item').eq(0).show();
+//	homeSlider.on('changed.owl.carousel initialized.owl.carousel', function(event) {
+//		var owlItems  = event.item.count,
+//			item      = event.item.index,
+//			calcItem  = Math.floor(item - (event.item.count / 2) + 1);
+//
+//		if (calcItem === 0) {
+//			calcItem = owlItems;
+//		}
+//		if (calcItem > owlItems) {
+//			calcItem = 1;
+//		}
+//		$('.home-slider-info__item').hide();
+//		$('.home-slider-info__item').eq(calcItem - 1).toggle();
+//	});
+//	$('.news-slider').owlCarousel({
+//		loop: true,
+//		nav: false,
+//		navText: [ '', '' ],
+//		items: 6,
+//		slideBy: 6,
+//		margin: 12,
+////		autoplay: true,
+////		autoplayTimeout: 5000,
+////		autoplayHoverPause: true
+//	})
+//	$('.recipe-slider').owlCarousel({
+//		loop: true,
+//		nav: false,
+//		navText: [ '', '' ],
+//		items: 2,
+//		slideBy: 2,
+//		margin: 20,
 //		autoplay: true,
 //		autoplayTimeout: 5000,
 //		autoplayHoverPause: true
-	})
-	$('.recipe-slider').owlCarousel({
-		loop: true,
-		nav: false,
-		navText: [ '', '' ],
-		items: 2,
-		slideBy: 2,
-		margin: 20,
-		autoplay: true,
-		autoplayTimeout: 5000,
-		autoplayHoverPause: true
-	})
-	$('.slider-btn-right').click(function() {
-		$('.' + $(this).attr('data-for')).trigger('next.owl.carousel');
-	})
-	$('.slider-btn-left').click(function() {
-		$('.' + $(this).attr('data-for')).trigger('prev.owl.carousel');
-	})
-
-
-
-
-
-	$('.product__item').hide();
-	if (window.location.hash && $('.product__item' + window.location.hash).length) {
-		$(window.location.hash).show();
-		$('.products-menu__item[href="' + window.location.hash + '"]').addClass('active');
-	} else {
-		$('.product__item').eq(0).show();
-		$('.products-menu__item').eq(0).addClass('active');
-	}
-	$('.products-menu__item').click(function(e) {
-		window.location.hash = $(this).attr('href');
-		e.preventDefault();
-		$('.products-menu__item').removeClass('active');
-		$(this).addClass('active');
-		$('.product__item').hide();
-		$($(this).attr('href')).show();
-	})
+//	})
+//	$('.slider-btn-right').click(function() {
+//		$('.' + $(this).attr('data-for')).trigger('next.owl.carousel');
+//	})
+//	$('.slider-btn-left').click(function() {
+//		$('.' + $(this).attr('data-for')).trigger('prev.owl.carousel');
+//	})
+//
+//
+//
+//
+//
+//	$('.product__item').hide();
+//	if (window.location.hash && $('.product__item' + window.location.hash).length) {
+//		$(window.location.hash).show();
+//		$('.products-menu__item[href="' + window.location.hash + '"]').addClass('active');
+//	} else {
+//		$('.product__item').eq(0).show();
+//		$('.products-menu__item').eq(0).addClass('active');
+//	}
+//	$('.products-menu__item').click(function(e) {
+//		window.location.hash = $(this).attr('href');
+//		e.preventDefault();
+//		$('.products-menu__item').removeClass('active');
+//		$(this).addClass('active');
+//		$('.product__item').hide();
+//		$($(this).attr('href')).show();
+//	})
 })
