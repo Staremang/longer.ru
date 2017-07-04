@@ -1,5 +1,7 @@
 @green: #6fb840;
-@ff: #34341d;
+@gryaz: #34341d;
+@almost-white: #f4f4f1;
+@gray: #393834;
 
 .MuseoSansCyrl300() {
 	font-family: 'Museo Sans Cyrl 300', sans-serif;
@@ -22,7 +24,7 @@
 .bold {
 	font-weight: 700;
 }
-.extrabold () { // Used
+.extrabold () { // Used 
 	font-weight: 800;
 }
 
@@ -65,7 +67,7 @@ header {
 }
 .breadcrumbs {
 	color: #979797;
-	background: #f4f4f1;
+	background: @almost-white;
 //	display: inline-block;
 	font-size: 14px;
     padding: 11px 0 10px;
@@ -85,14 +87,14 @@ header {
 	}
 }
 .header-block-dark {
-	background: #393834;
+	background: @gray;
 	height: 50px;
 	&__container {
 		display: flex;
 		align-items: center;
 		justify-content: flex-end;
 		height: 100%;
-		color: #f4f4f1;
+		color: @almost-white;
 		a {
 			text-decoration: none;
 			color: inherit;
@@ -162,7 +164,7 @@ header {
 		text-transform: uppercase;
 		font-size: 14px;
 		line-height: 100px;
-		color: #34341d;
+		color: @gryaz;
 //		margin-left: 40px;
 		text-decoration: none;
 		vertical-align: middle;
@@ -209,20 +211,20 @@ header {
 			margin-right: 0;
 		}
 		&:hover {
-			box-shadow: 0 0 0 2px #393834, 0 0 0 3px white;
+			box-shadow: 0 0 0 2px @gray, 0 0 0 3px white;
 		}
 		> svg {
 			width: 32px;
 			height: 32px;
-			fill: #393834;
+			fill: @gray;
 		}
 	}
 	&_dark {
 		.social__icon {
-			background: #393834;
+			background: @gray;
 			
 			&:hover {
-				box-shadow: 0 0 0 2px white, 0 0 0 3px #393834;
+				box-shadow: 0 0 0 2px white, 0 0 0 3px @gray;
 			}
 			> svg {
 				fill: #FFFFFF;
@@ -239,21 +241,21 @@ header {
 	margin-left: -10px;
 	margin-right: -10px;
 	&__item {
-		background-color: #f4f4f1;
+		background-color: @almost-white;
 		display: block;
 		flex: 1 0 0;
 		margin: 10px;
 		text-decoration: none;
-		color: #34341d;
+		color: @gryaz;
 		text-transform: uppercase;
 		.semibold();
 		text-align: center;
-		border: 4px solid #34341d;
+		border: 4px solid @gryaz;
 		font-size: 13px;
 		a& {
 			transition: box-shadow .3s ease;
 			&:hover {
-				box-shadow: 0 0 0 2px white, 0 0 0 4px #393834;
+				box-shadow: 0 0 0 2px white, 0 0 0 4px @gray;
 			}
 		}
 	}
@@ -272,7 +274,7 @@ header {
 		margin: 0;
 		background-size: cover;
 		background-position: center;
-		border-bottom: 4px solid #34341d;
+		border-bottom: 4px solid @gryaz;
 	}
 }
 .articles {
@@ -289,7 +291,7 @@ header {
 	}
 	&__title {
 		font-size: 18px;
-		color: #34341d;
+		color: @gryaz;
 		line-height: 30px;
 		margin-bottom: 0.2em;
 		.semibold();
@@ -303,9 +305,9 @@ header {
 	}
 	&__btn {
 		font-size: 14px;
-		background: #393834;
+		background: @gray;
 		border: 0;
-		color: #f4f4f1;
+		color: @almost-white;
 		line-height: 30px;
 		padding: 0 21px;
 		display: inline-block;
@@ -314,14 +316,14 @@ header {
 		
 		transition: box-shadow .3s ease;
 		&:hover {
-			box-shadow: 0 0 0 2px white, 0 0 0 4px #393834;
+			box-shadow: 0 0 0 2px white, 0 0 0 4px @gray;
 		}
 		
 	}
 }
 
 .footer {
-	background: #393834;
+	background: @gray;
 	color: white;
 }
 .footer-container {
@@ -349,7 +351,7 @@ header {
 }
 .slider-hero {
 	width: 100%;
-	color: #f4f4f1;
+	color: @almost-white;
 	&__item {
 		overflow: hidden;
 		background-size: cover;
@@ -461,7 +463,7 @@ header {
 }
 .content-text {
 	font-size: 16px;
-	background: #f4f4f1;
+	background: @almost-white;
 	line-height: 24px;
 	padding: 15px 15px 20px;
 	.semibold();
@@ -484,7 +486,7 @@ header {
 		line-height: 24px;
 //		background: url(/img/rm/3.png) top left no-repeat red;
 		.MuseoSansCyrl300();
-		color: #393834;
+		color: @gray;
 		font-size: 14px;
 		p {
 			margin: 0;
@@ -532,9 +534,9 @@ header {
 .card {
 	border: 1px solid #d3d3d3;
 	text-decoration: none;
-	background: #f4f4f1;
+	background: @almost-white;
 	display: block;
-	color: #34341d;
+	color: @gryaz;
 //	margin: 10px 0;
 	margin-bottom: 20px;
 	transition: box-shadow .3s ease;
@@ -590,16 +592,16 @@ header {
 }
 .catalog-title {
 	text-align: center;
-	background: #f4f4f1;
+	background: @almost-white;
 	margin: 20px 0;
 	line-height: 60px;
 	text-transform: uppercase;
 	font-size: 30px;
 	.semibold();
-	color: #34341d;
+	color: @gryaz;
 }
 .category-menu {
-	background: #f4f4f1;
+	background: @almost-white;
 	position: relative;
 	overflow: hidden;
 	border-bottom: 2px solid #737351;
@@ -610,7 +612,7 @@ header {
 		display: none;
 	}
 	&__section-title {
-		background: #34341d;
+		background: @gryaz;
 		font-size: 16px;
 		.semibold();
 		color: white;
@@ -646,7 +648,7 @@ header {
 		font-size: 14px;
 		text-decoration: none;
 		text-transform: uppercase;
-		color: #34341d;
+		color: @gryaz;
 		padding-left: 13px;
 		line-height: 40px;
 		display: block;
@@ -677,7 +679,7 @@ header {
 }
 .product-title {
 	font-size: 18px;
-	background: #f4f4f1;
+	background: @almost-white;
 	padding: 0 16px;
 	line-height: 48px;
 	font-size: 18px;
