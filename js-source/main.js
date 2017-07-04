@@ -191,6 +191,18 @@ $(document).ready(function () {
 	//			autoplayTimeout:5000,
 	//			autoplayHoverPause:true
 	})
+	$('.product-gallary-slider').owlCarousel({
+		loop:true,
+		nav:true,
+		navText: [ '<img src="img/arrow-left.png" alt="Влево">', '<img src="img/arrow-right.png" alt="Вправо">' ],
+		items:3,
+		center: true,
+		margin: 10
+//    animateIn: 'flipInX',
+	//			autoplay:true,
+	//			autoplayTimeout:5000,
+	//			autoplayHoverPause:true
+	})
 
 	//		$('.product-info__item').hide();
 	//		$('.product-info__item').eq(0).show();
