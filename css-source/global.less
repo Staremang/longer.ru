@@ -722,30 +722,38 @@ header {
 	display: flex;
 	align-items: stretch;
 	margin: 18px 0;
-	
-//	background: url(/img/rm/5.png) top no-repeat;
 }
 .product-gallary {
 	min-width: 400px;
 	flex: 0 0 400px;
-	
-//	background: gray;
 }
 .product-gallary-slider {
 	padding: 0 25px;
 	&__item {
 		max-width: 100%;
-//		height: 69px;
+		height: 69px;
 //		width: 110px;
+		width: 100%;
+		cursor: pointer;
+		&.active {
+			border: 3px solid @gryaz;
+//			box-shadow: 0 0 0 2px white, 0 0 0 3px #d3d3d3;
+		}
 	}
 }
 .product-gallary-full {
 	margin-bottom: 10px;
 	&__item {
 		display: none;
+		width: 400px;
+		height: 250px;
+		outline: none;
+		> img {
+			width: 100%;
+			height: 100%;
+		}
 		&.active {
 			display: block;
-			width: 100%;
 		}
 	}
 }

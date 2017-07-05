@@ -5,6 +5,7 @@
 	<title>Главная</title>
     
     <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
 <!--	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>-->
 </head>
 <body>
@@ -67,20 +68,19 @@
 			<div class="product">
 				<div class="product-gallary">
 					<div class="product-gallary-full">
-						<img src="img/photo-1.jpg" alt="" class="product-gallary-full__item active" id="photo-1">
-						<img src="img/photo-1.jpg" alt="" class="product-gallary-full__item" id="photo-2">
-						<img src="img/photo-1.jpg" alt="" class="product-gallary-full__item" id="photo-3">
-						<img src="img/photo-1.jpg" alt="" class="product-gallary-full__item" id="photo-4">
-						<img src="img/photo-1.jpg" alt="" class="product-gallary-full__item" id="photo-5">
-						<img src="img/photo-1.jpg" alt="" class="product-gallary-full__item" id="photo-6">
+<!--					<a data-fancybox="gallery" id="{ID элемента - должен совпадать с атрибутом data-pic нужного изображения в слайдере}" class="product-gallary-full__item" href="{Ссылка на полное изображение}"><img src="{Ссылка на уменьшенное изображение 400х250}"></a>-->
+						<a data-fancybox="gallery" id="photo-1" class="product-gallary-full__item" href="img/photo-1.jpg"><img src="img/photo-1.jpg"></a>
+						<a data-fancybox="gallery" id="photo-2" class="product-gallary-full__item" href="img/photo-2.jpg"><img src="img/photo-2.jpg"></a>
+						<a data-fancybox="gallery" id="photo-3" class="product-gallary-full__item" href="img/photo-3.jpg"><img src="img/photo-3.jpg"></a>
+						<a data-fancybox="gallery" id="photo-4" class="product-gallary-full__item" href="img/photo-4.jpg"><img src="img/photo-4.jpg"></a>
+						<a data-fancybox="gallery" id="photo-5" class="product-gallary-full__item" href="img/photo-5.jpg"><img src="img/photo-5.jpg"></a>
 					</div>
 					<div class="product-gallary-slider owl-carousel">
 						<img src="img/photo-1.jpg" alt="" class="product-gallary-slider__item" data-pic="photo-1">
-						<img src="img/photo-1.jpg" alt="" class="product-gallary-slider__item" data-pic="photo-2">
-						<img src="img/photo-1.jpg" alt="" class="product-gallary-slider__item" data-pic="photo-3">
-						<img src="img/photo-1.jpg" alt="" class="product-gallary-slider__item" data-pic="photo-4">
-						<img src="img/photo-1.jpg" alt="" class="product-gallary-slider__item" data-pic="photo-5">
-						<img src="img/photo-1.jpg" alt="" class="product-gallary-slider__item" data-pic="photo-6">
+						<img src="img/photo-2.jpg" alt="" class="product-gallary-slider__item" data-pic="photo-2">
+						<img src="img/photo-3.jpg" alt="" class="product-gallary-slider__item" data-pic="photo-3">
+						<img src="img/photo-4.jpg" alt="" class="product-gallary-slider__item" data-pic="photo-4">
+						<img src="img/photo-5.jpg" alt="" class="product-gallary-slider__item" data-pic="photo-5">
 					</div>
 				</div>
 				<div class="product-info">
@@ -191,6 +191,7 @@
 <!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
 	<script src="js/jquery-3.2.0.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
 	<script>
 		var addr = "Владивосток, Суханова 6";
 	</script>
