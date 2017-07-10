@@ -73,10 +73,10 @@ $(document).ready(function () {
 		trigger = false;
 	window.addEventListener('scroll', function() {
 		scroll = window.pageYOffset;
-		if (scroll > document.documentElement.clientHeight && !trigger) {
+		if (scroll > 500 && !trigger) {
 			trigger = true;
 			document.querySelector('.up').classList.add('view');
-		} else if (scroll <= document.documentElement.clientHeight && trigger) {
+		} else if (scroll <= 500 && trigger) {
 			trigger = false;
 			document.querySelector('.up').classList.remove('view');
 		}
